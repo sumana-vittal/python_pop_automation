@@ -9,6 +9,8 @@ class HomePage(Page):
     SEARCH_INPUT_FIELD = (By.CSS_SELECTOR, "[data-test='@web/Search/SearchInput']")
     SEARCH_BTN         = (By.CSS_SELECTOR, "[data-test='@web/Search/SearchButton']")
 
+    CART_ICON = (By.CSS_SELECTOR, "[data-test='@web/CartIcon']")
+
     def open_home_page(self):
         self.open_url('https://www.target.com')
 
@@ -17,7 +19,7 @@ class HomePage(Page):
         self.click(*self.SEARCH_BTN)
         sleep(6)
 
-
-
+    def click_cart_icon(self, *locator):
+        self.wait_for_element_click(*self.CART_ICON)
 
 
