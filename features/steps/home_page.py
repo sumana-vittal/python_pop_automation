@@ -16,6 +16,16 @@ def click_on_cart_icon(context):
     context.app.home_page.click_cart_icon()
 
 
+@when('Click Sign In')
+def click_on_sign_in(context):
+    context.app.home_page.click_sign_in()
+
+
+@when('From right side navigation menu, click Sign In')
+def click_right_navigation_sign_in(context):
+    context.app.home_page.click_right_navigation_sign_in()
+
+
 @then('Verify the search result page for {product} header')
 def verify_search_results(context, product):
     context.app.search_results_page.verify_search_result_header(product)
