@@ -19,8 +19,8 @@ class HomePage(Page):
     def open_home_page(self):
         self.open_url('https://www.target.com')
 
-    def search(self, *locator):
-        self.input('coffee', *self.SEARCH_INPUT_FIELD)
+    def search(self, search_product, *locator):
+        self.input(search_product, *self.SEARCH_INPUT_FIELD)
         self.click(*self.SEARCH_BTN)
         sleep(6)
 
