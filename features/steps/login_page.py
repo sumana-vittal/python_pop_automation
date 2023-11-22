@@ -1,9 +1,9 @@
 from behave import when, then
 
 
-@when('Input email and password on SignIn page')
-def input_email_and_password(context):
-    context.app.login_page.input_user_email_password()
+@when('Input email {email} and password {password} on SignIn page')
+def input_email_and_password(context, email, password):
+    context.app.login_page.input_user_email_password(email, password)
 
 
 @when('Click on Sign In button')

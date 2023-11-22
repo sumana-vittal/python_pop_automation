@@ -11,9 +11,9 @@ class LoginPage(Page):
     SIGN_IN_BTN = (By.CSS_SELECTOR, "[class*='SignInButton']")
     SIGN_IN_FORM = (By.CSS_SELECTOR, "[class*='AuthContainerWrapper']")
 
-    def input_user_email_password(self):
-        self.input('jac42437@udinnews.com', *self.EMAIL_FIELD)
-        self.input('jac42437', *self.PASSWORD_FIELD)
+    def input_user_email_password(self, username, password):
+        self.input(username, *self.EMAIL_FIELD)
+        self.input(password, *self.PASSWORD_FIELD)
 
     def click_sign_in_button(self):
         self.wait_for_element_click(*self.SIGN_IN_BTN)
