@@ -11,6 +11,10 @@ def click_right_navigation_cart_check_out_menu(context):
     context.app.search_results_page.click_right_navigation_view_cart()
 
 
+@when('Store product name')
+def store_product_name(context):
+    context.product_name = context.app.search_results_page.get_product_name()
+
 @then('Verify the search result page for {product} header')
 def verify_search_results(context, product):
     context.app.search_results_page.verify_search_result_header(product)

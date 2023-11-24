@@ -7,6 +7,7 @@ class SearchResultsPage(Page):
 
     SEARCH_RESULT_ITEMS = (By.CSS_SELECTOR, "[data-test='addToCartButton']")
     RIGHT_NAVIGATION_VIEW_CART = (By.CSS_SELECTOR, "a[href='/cart']")
+    SIDE_NAV_PRODUCT_NAME = (By.CSS_SELECTOR, "h4[class*='StyledHeading']")
 
     def verify_search_result_header(self, product):
         self.verify_partial_text(product, *self.SEARCH_RESULT_HEADER)
@@ -19,3 +20,6 @@ class SearchResultsPage(Page):
 
     def click_right_navigation_view_cart(self):
         self.wait_for_element_click(*self.RIGHT_NAVIGATION_VIEW_CART)
+
+    def get_product_name(self):
+        return self.wait_for_element_appear(*self.SIDE_NAV_PRODUCT_NAME).text
