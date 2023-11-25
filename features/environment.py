@@ -16,9 +16,10 @@ def browser_init(context):
     # context.driver = webdriver.Chrome(service=service)
 
    # service = Service(executable_path="/Users/raman/Documents/Careerist/QA/python_pop_automation/geckodriver")
-    driver_path = GeckoDriverManager().install()
-    service = Service(driver_path)
-    context.driver = webdriver.Firefox(service=service)
+   #  driver_path = GeckoDriverManager().install()
+   #  service = Service(driver_path)
+   #  context.driver = webdriver.Firefox(service=service)
+    context.driver = webdriver.Safari()
 
     context.driver.wait = WebDriverWait(context.driver, 10)
     context.driver.maximize_window()
