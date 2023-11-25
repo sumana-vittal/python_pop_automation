@@ -15,11 +15,24 @@ def browser_init(context):
     # service = Service(driver_path)
     # context.driver = webdriver.Chrome(service=service)
 
+   ###FIREFOX  BROWSER Support###
    # service = Service(executable_path="/Users/raman/Documents/Careerist/QA/python_pop_automation/geckodriver")
    #  driver_path = GeckoDriverManager().install()
    #  service = Service(driver_path)
    #  context.driver = webdriver.Firefox(service=service)
-    context.driver = webdriver.Safari()
+
+    ### SAFARI  BROWSER Support ###
+   #  context.driver = webdriver.Safari()
+
+    ###HEADLESS BROWSER SUPPORT###
+    options = webdriver.ChromeOptions()
+    options.add_argument("headless")
+    service = Service(ChromeDriverManager().install())
+    context.driver = webdriver.Chrome(
+        options=options,
+        service=service
+    )
+
 
     context.driver.wait = WebDriverWait(context.driver, 10)
     context.driver.maximize_window()
