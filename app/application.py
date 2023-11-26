@@ -1,6 +1,7 @@
 from pages.base_page import Page
 from pages.cart_page import CartPage
 from pages.circle_page import CirclePage
+from pages.help_page import HelpPage
 from pages.login_page import LoginPage
 from pages.partner_page import PartnerPage
 from pages.search_results_page import SearchResultsPage
@@ -19,3 +20,4 @@ class Application:
         self.sign_in_page = SignInPage(driver)
         self.login_page = LoginPage(driver)
         self.partner_page = PartnerPage(driver)
+        self.help_page = HelpPage(driver)
