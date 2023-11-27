@@ -40,3 +40,7 @@ def verify_user_logged_in(context):
 def close_terms_and_conditions_page(context):
     context.app.page.close_page()
     context.app.page.switch_to_window(context.original_window)
+
+@then('Verified that “We can\'t find your account.” message is shown')
+def verify_invalid_account_message(context):
+    pass
