@@ -2,6 +2,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 from pages.base_page import Page
 from selenium.webdriver.support import expected_conditions as EC
+from support.logger import logger
 
 
 class HelpPage(Page):
@@ -18,6 +19,7 @@ class HelpPage(Page):
 
     def select_topic(self, select_topic):
         topic_selection = self.find_element(*self.TOPIC_SELECTION)
+        logger.info(f'selecting from {select_topic} drop-down')
         select = Select(topic_selection)
         select.select_by_value(select_topic)
 
