@@ -93,3 +93,6 @@ class Page:
             EC.url_contains(expected_partial_url),
             message=f'Expected {expected_partial_url} not in url'
         )
+
+    def save_screenshot(self, name):
+        self.driver.save_screenshot(f'{name}.png')
