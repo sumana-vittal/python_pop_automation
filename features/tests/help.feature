@@ -1,5 +1,6 @@
 Feature: Tests for Help Pages
 
+  @smoke
   Scenario: User can select Help topic
     Given Open Help page for Returns
     Then  Verify Returns page opened

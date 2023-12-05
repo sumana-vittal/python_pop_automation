@@ -5,4 +5,4 @@ Feature: Test Scenarios for the Search
     Given Open target home page
     When Search for coffee
     Then Verify the search result page for coffee header
-    And Verify coffee in search result url
+    And Verify coffebee in search result url

@@ -1,5 +1,6 @@
 Feature: Test Scenarios for Cart
 
+  @smoke
   Scenario: “Your cart is empty” message is shown for empty cart
     Given Open target home page
     When Click on Cart icon

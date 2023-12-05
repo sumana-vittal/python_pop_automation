@@ -372,3 +372,316 @@ Started step:  <then "Verify the search result page for coffee header">
 Started step:  <then "Verify coffeee in search result url">
 2023-12-01 20:35:21,485 - support.logger - WARNING - 
 Step failed:  <then "Verify coffeee in search result url">
+2023-12-05 10:06:36,395 - support.logger - INFO - 
+Started scenario: “Your cart is empty” message is shown for empty cart
+2023-12-05 10:06:41,060 - support.logger - INFO - 
+Started step:  <given "Open target home page">
+2023-12-05 10:06:43,852 - support.logger - INFO - Opening url https://www.target.com
+2023-12-05 10:06:43,852 - support.logger - INFO - 
+Started step:  <when "Click on Cart icon">
+2023-12-05 10:06:45,222 - support.logger - INFO - 
+Started step:  <then "Verify Your cart is empty message is shown">
+2023-12-05 10:06:45,222 - support.logger - INFO - Searching for the element locator ('css selector', "h1[class*='StyledHeading']")
+2023-12-05 10:06:46,053 - support.logger - INFO - 
+Started scenario: User check for the single item added to the cart
+2023-12-05 10:06:48,644 - support.logger - INFO - 
+Started step:  <given "Open target home page">
+2023-12-05 10:06:51,167 - support.logger - INFO - Opening url https://www.target.com
+2023-12-05 10:06:51,168 - support.logger - INFO - 
+Started step:  <when "Search for mug">
+2023-12-05 10:06:51,168 - support.logger - INFO - inputting the keys mug
+2023-12-05 10:06:52,052 - support.logger - INFO - Clicking on ('css selector', "[data-test='@web/Search/SearchButton']")
+2023-12-05 10:06:58,056 - support.logger - INFO - 
+Started step:  <when "Select the product by clicking on Add to cart">
+2023-12-05 10:06:58,265 - support.logger - INFO - 
+Started step:  <when "Store product name">
+2023-12-05 10:06:58,713 - support.logger - INFO - 
+Started step:  <when "From right side navigation menu, click "View cart & check out"">
+2023-12-05 10:07:00,137 - support.logger - INFO - 
+Started step:  <then "Verify cart has individual cart item">
+2023-12-05 10:07:00,138 - support.logger - INFO - Searching for the element locator ('css selector', "[class*='CartSummarySpan']")
+2023-12-05 10:07:00,895 - support.logger - INFO - 
+Started step:  <then "Verify cart has correct product">
+2023-12-05 10:07:00,896 - support.logger - INFO - Searching for the element locator ('css selector', "[data-test='cartItem-title']")
+2023-12-05 10:07:01,445 - support.logger - WARNING - 
+Step failed:  <then "Verify cart has correct product">
+2023-12-05 10:07:01,691 - support.logger - INFO - 
+Started scenario: Verify user can click through Circle tabs
+2023-12-05 10:07:04,283 - support.logger - INFO - 
+Started step:  <given "Open Circle Page">
+2023-12-05 10:07:05,555 - support.logger - INFO - Opening url https://www.target.com/circle
+2023-12-05 10:07:05,556 - support.logger - INFO - 
+Started step:  <then "Verify that clicking through Circle tabs works">
+2023-12-05 10:07:05,556 - support.logger - INFO - Searching for the elements locator ('css selector', "a[class*='NavigationLink']")
+2023-12-05 10:07:06,321 - support.logger - INFO - Searching for the elements locator ('css selector', "a[class*='NavigationLink']")
+2023-12-05 10:07:06,574 - support.logger - INFO - Searching for the elements locator ('css selector', "a[class*='NavigationLink']")
+2023-12-05 10:07:07,226 - support.logger - INFO - Searching for the elements locator ('css selector', "a[class*='NavigationLink']")
+2023-12-05 10:07:07,988 - support.logger - INFO - 
+Started scenario: User is able to navigate to Google Play Target Page
+2023-12-05 10:07:10,546 - support.logger - INFO - 
+Started step:  <given "Open Circle Page">
+2023-12-05 10:07:11,800 - support.logger - INFO - Opening url https://www.target.com/circle
+2023-12-05 10:07:11,801 - support.logger - INFO - 
+Started step:  <given "Store original window">
+2023-12-05 10:07:11,804 - support.logger - INFO - 
+Started step:  <when "Click Google Play button">
+2023-12-05 10:07:12,934 - support.logger - INFO - Clicking on ('css selector', "img[alt='Get it on Google Play']")
+2023-12-05 10:07:12,934 - support.logger - INFO - 
+Started step:  <when "Switch to new window">
+2023-12-05 10:07:12,951 - support.logger - INFO - 
+Started step:  <then "Verify Google Play Target page opened">
+2023-12-05 10:07:13,901 - support.logger - INFO - 
+Started step:  <then "Close current page">
+2023-12-05 10:07:13,980 - support.logger - INFO - 
+Started step:  <then "Return to original window">
+2023-12-05 10:07:14,211 - support.logger - INFO - 
+Started scenario: User can select Help topic
+2023-12-05 10:07:16,734 - support.logger - INFO - 
+Started step:  <given "Open Help page for Returns">
+2023-12-05 10:07:19,275 - support.logger - INFO - Opening url https://help.target.com/help/subcategoryarticle?childcat=Returns&parentcat=Returns+%26+Exchanges&searchQuery=
+2023-12-05 10:07:19,294 - support.logger - INFO - 
+Started step:  <then "Verify Returns page opened">
+2023-12-05 10:07:19,332 - support.logger - INFO - 
+Started step:  <when "Select Help topic Promotions & Coupons">
+2023-12-05 10:07:19,335 - support.logger - INFO - Searching for the element locator ('css selector', "select[id*='viewHelpTopics']")
+2023-12-05 10:07:19,346 - support.logger - INFO - selecting from Promotions & Coupons drop-down
+2023-12-05 10:07:21,493 - support.logger - INFO - 
+Started step:  <then "Verify Current promotions page opened">
+2023-12-05 10:07:21,644 - support.logger - INFO - 
+Started scenario: User can select Help topic -- @1.1 
+2023-12-05 10:07:24,154 - support.logger - INFO - 
+Started step:  <given "Open Help page for Returns">
+2023-12-05 10:07:26,454 - support.logger - INFO - Opening url https://help.target.com/help/subcategoryarticle?childcat=Returns&parentcat=Returns+%26+Exchanges&searchQuery=
+2023-12-05 10:07:26,475 - support.logger - INFO - 
+Started step:  <then "Verify Returns page opened">
+2023-12-05 10:07:26,504 - support.logger - INFO - 
+Started step:  <when "Select Help topic Gift Cards">
+2023-12-05 10:07:26,516 - support.logger - INFO - Searching for the element locator ('css selector', "select[id*='viewHelpTopics']")
+2023-12-05 10:07:26,527 - support.logger - INFO - selecting from Gift Cards drop-down
+2023-12-05 10:07:27,918 - support.logger - INFO - 
+Started step:  <then "Verify Target GiftCard balance page opened">
+2023-12-05 10:07:28,062 - support.logger - INFO - 
+Started scenario: User can select Help topic -- @1.2 
+2023-12-05 10:07:30,628 - support.logger - INFO - 
+Started step:  <given "Open Help page for Returns">
+2023-12-05 10:07:33,074 - support.logger - INFO - Opening url https://help.target.com/help/subcategoryarticle?childcat=Returns&parentcat=Returns+%26+Exchanges&searchQuery=
+2023-12-05 10:07:33,094 - support.logger - INFO - 
+Started step:  <then "Verify Returns page opened">
+2023-12-05 10:07:33,124 - support.logger - INFO - 
+Started step:  <when "Select Help topic Holiday Help">
+2023-12-05 10:07:33,136 - support.logger - INFO - Searching for the element locator ('css selector', "select[id*='viewHelpTopics']")
+2023-12-05 10:07:33,147 - support.logger - INFO - selecting from Holiday Help drop-down
+2023-12-05 10:07:35,124 - support.logger - INFO - 
+Started step:  <then "Verify Holiday Help page opened">
+2023-12-05 10:07:35,261 - support.logger - INFO - 
+Started scenario: User can select Help topic -- @1.3 
+2023-12-05 10:07:37,829 - support.logger - INFO - 
+Started step:  <given "Open Help page for Returns">
+2023-12-05 10:07:40,228 - support.logger - INFO - Opening url https://help.target.com/help/subcategoryarticle?childcat=Returns&parentcat=Returns+%26+Exchanges&searchQuery=
+2023-12-05 10:07:40,248 - support.logger - INFO - 
+Started step:  <then "Verify Returns page opened">
+2023-12-05 10:07:40,302 - support.logger - INFO - 
+Started step:  <when "Select Help topic Orders & Purchases">
+2023-12-05 10:07:40,311 - support.logger - INFO - Searching for the element locator ('css selector', "select[id*='viewHelpTopics']")
+2023-12-05 10:07:40,322 - support.logger - INFO - selecting from Orders & Purchases drop-down
+2023-12-05 10:07:42,109 - support.logger - INFO - 
+Started step:  <then "Verify Print a receipt page opened">
+2023-12-05 10:07:42,247 - support.logger - INFO - 
+Started scenario: User can select Help topic -- @1.4 
+2023-12-05 10:07:44,760 - support.logger - INFO - 
+Started step:  <given "Open Help page for Returns">
+2023-12-05 10:07:47,184 - support.logger - INFO - Opening url https://help.target.com/help/subcategoryarticle?childcat=Returns&parentcat=Returns+%26+Exchanges&searchQuery=
+2023-12-05 10:07:47,205 - support.logger - INFO - 
+Started step:  <then "Verify Returns page opened">
+2023-12-05 10:07:47,235 - support.logger - INFO - 
+Started step:  <when "Select Help topic Target Circle™">
+2023-12-05 10:07:47,247 - support.logger - INFO - Searching for the element locator ('css selector', "select[id*='viewHelpTopics']")
+2023-12-05 10:07:47,257 - support.logger - INFO - selecting from Target Circle™ drop-down
+2023-12-05 10:07:48,992 - support.logger - INFO - 
+Started step:  <then "Verify About Target Circle page opened">
+2023-12-05 10:07:49,178 - support.logger - INFO - 
+Started scenario: User can see signin arrow
+2023-12-05 10:07:51,774 - support.logger - INFO - 
+Started step:  <given "Open target home page">
+2023-12-05 10:07:54,232 - support.logger - INFO - Opening url https://www.target.com
+2023-12-05 10:07:54,232 - support.logger - INFO - 
+Started step:  <when "Hover over signin">
+2023-12-05 10:07:54,233 - support.logger - INFO - Searching for the element locator ('css selector', "[data-test='@web/AccountLink']")
+2023-12-05 10:07:54,765 - support.logger - INFO - 
+Started step:  <then "Verify signin arrow shown">
+2023-12-05 10:07:55,032 - support.logger - INFO - 
+Started scenario: Verify user successfully logged in
+2023-12-05 10:07:57,485 - support.logger - INFO - 
+Started step:  <given "Open target home page">
+2023-12-05 10:07:59,160 - support.logger - INFO - Opening url https://www.target.com
+2023-12-05 10:07:59,160 - support.logger - INFO - 
+Started step:  <when "Click Sign In">
+2023-12-05 10:08:00,358 - support.logger - INFO - Clicking on ('css selector', "[data-test='@web/AccountLink']")
+2023-12-05 10:08:00,359 - support.logger - INFO - 
+Started step:  <when "From right side navigation menu, click Sign In">
+2023-12-05 10:08:01,805 - support.logger - INFO - Clicking on ('css selector', "[data-test='accountNav-signIn']")
+2023-12-05 10:08:01,805 - support.logger - INFO - 
+Started step:  <when "Input email jac42437@udinnews.com and password ******** on SignIn page">
+2023-12-05 10:08:01,806 - support.logger - INFO - inputting the keys jac42437@udinnews.com
+2023-12-05 10:08:02,675 - support.logger - INFO - inputting the keys ********
+2023-12-05 10:08:02,767 - support.logger - INFO - 
+Started step:  <when "Click on Sign In button">
+2023-12-05 10:08:02,856 - support.logger - INFO - 
+Started step:  <then "Verify user is logged in and sign in form is disappeared">
+2023-12-05 10:08:18,301 - support.logger - WARNING - 
+Step failed:  <then "Verify user is logged in and sign in form is disappeared">
+2023-12-05 10:08:18,556 - support.logger - INFO - 
+Started scenario: User can open and close Terms and Conditions from sign in page
+2023-12-05 10:08:21,152 - support.logger - INFO - 
+Started step:  <given "Open target home page">
+2023-12-05 10:08:23,553 - support.logger - INFO - Opening url https://www.target.com
+2023-12-05 10:08:23,553 - support.logger - INFO - 
+Started step:  <when "Click Sign In">
+2023-12-05 10:08:24,026 - support.logger - INFO - Clicking on ('css selector', "[data-test='@web/AccountLink']")
+2023-12-05 10:08:24,026 - support.logger - INFO - 
+Started step:  <when "From right side navigation menu, click Sign In">
+2023-12-05 10:08:25,754 - support.logger - INFO - Clicking on ('css selector', "[data-test='accountNav-signIn']")
+2023-12-05 10:08:25,755 - support.logger - INFO - 
+Started step:  <when "Store original windows">
+2023-12-05 10:08:25,757 - support.logger - INFO - 
+Started step:  <when "Click on Target terms and conditions link">
+2023-12-05 10:08:26,468 - support.logger - INFO - 
+Started step:  <when "Switch to the newly opened window">
+2023-12-05 10:08:26,483 - support.logger - INFO - 
+Started step:  <then "Verify Terms and Conditions page is opened">
+2023-12-05 10:08:28,100 - support.logger - INFO - 
+Started step:  <then "User can close new window and switch back to original">
+2023-12-05 10:08:28,419 - support.logger - INFO - 
+Started scenario: User check for incorrect email and password
+2023-12-05 10:08:30,893 - support.logger - INFO - 
+Started step:  <given "Open target home page">
+2023-12-05 10:08:33,733 - support.logger - INFO - Opening url https://www.target.com
+2023-12-05 10:08:33,734 - support.logger - INFO - 
+Started step:  <when "Click Sign In">
+2023-12-05 10:08:33,846 - support.logger - INFO - Clicking on ('css selector', "[data-test='@web/AccountLink']")
+2023-12-05 10:08:33,847 - support.logger - INFO - 
+Started step:  <when "From right side navigation menu, click Sign In">
+2023-12-05 10:08:34,938 - support.logger - INFO - Clicking on ('css selector', "[data-test='accountNav-signIn']")
+2023-12-05 10:08:34,940 - support.logger - INFO - 
+Started step:  <when "Input email test7@example.com and password testtest on SignIn page">
+2023-12-05 10:08:34,941 - support.logger - INFO - inputting the keys test7@example.com
+2023-12-05 10:08:35,770 - support.logger - INFO - inputting the keys testtest
+2023-12-05 10:08:35,858 - support.logger - INFO - 
+Started step:  <when "Click on Sign In button">
+2023-12-05 10:08:35,945 - support.logger - INFO - 
+Started step:  <then "Verified that “We can't find your account.” message is shown">
+2023-12-05 10:08:36,188 - support.logger - INFO - 
+Started scenario: verify search product
+2023-12-05 10:08:38,756 - support.logger - INFO - 
+Started step:  <given "Open target home page">
+2023-12-05 10:08:41,202 - support.logger - INFO - Opening url https://www.target.com
+2023-12-05 10:08:41,203 - support.logger - INFO - 
+Started step:  <when "Search for coffee">
+2023-12-05 10:08:41,204 - support.logger - INFO - inputting the keys coffee
+2023-12-05 10:08:42,046 - support.logger - INFO - Clicking on ('css selector', "[data-test='@web/Search/SearchButton']")
+2023-12-05 10:08:48,056 - support.logger - INFO - 
+Started step:  <then "Verify the search result page for coffee header">
+2023-12-05 10:08:48,057 - support.logger - INFO - Searching for the element locator ('css selector', "[data-test='resultsHeading']")
+2023-12-05 10:08:48,085 - support.logger - INFO - 
+Started step:  <then "Verify coffee in search result url">
+2023-12-05 10:08:48,314 - support.logger - INFO - 
+Started scenario: Verify Sign In form is opened
+2023-12-05 10:08:50,810 - support.logger - INFO - 
+Started step:  <given "Open target home page">
+2023-12-05 10:08:53,300 - support.logger - INFO - Opening url https://www.target.com
+2023-12-05 10:08:53,300 - support.logger - INFO - 
+Started step:  <when "Click Sign In">
+2023-12-05 10:08:53,704 - support.logger - INFO - Clicking on ('css selector', "[data-test='@web/AccountLink']")
+2023-12-05 10:08:53,704 - support.logger - INFO - 
+Started step:  <when "From right side navigation menu, click Sign In">
+2023-12-05 10:08:55,137 - support.logger - INFO - Clicking on ('css selector', "[data-test='accountNav-signIn']")
+2023-12-05 10:08:55,138 - support.logger - INFO - 
+Started step:  <then "Verify Sign In url is opened">
+2023-12-05 10:08:55,319 - support.logger - INFO - 
+Started step:  <then "Verify Sign in header Sign is present">
+2023-12-05 10:08:55,319 - support.logger - INFO - Searching for the element locator ('css selector', "h1[class*='AuthHeading']")
+2023-12-05 10:08:55,688 - support.logger - INFO - 
+Started step:  <then "Verify Sign in button is present">
+2023-12-05 10:08:55,688 - support.logger - INFO - Searching for the element locator ('id', 'login')
+2023-12-05 10:11:10,831 - support.logger - INFO - 
+Started scenario: “Your cart is empty” message is shown for empty cart
+2023-12-05 10:11:14,344 - support.logger - INFO - 
+Started step:  <given "Open target home page">
+2023-12-05 10:11:17,169 - support.logger - INFO - Opening url https://www.target.com
+2023-12-05 10:11:17,170 - support.logger - INFO - 
+Started step:  <when "Click on Cart icon">
+2023-12-05 10:11:18,676 - support.logger - INFO - 
+Started step:  <then "Verify Your cart is empty message is shown">
+2023-12-05 10:11:18,676 - support.logger - INFO - Searching for the element locator ('css selector', "h1[class*='StyledHeading']")
+2023-12-05 10:11:19,555 - support.logger - INFO - 
+Started scenario: verify search product
+2023-12-05 10:11:22,040 - support.logger - INFO - 
+Started step:  <given "Open target home page">
+2023-12-05 10:11:23,877 - support.logger - INFO - Opening url https://www.target.com
+2023-12-05 10:11:23,877 - support.logger - INFO - 
+Started step:  <when "Search for coffee">
+2023-12-05 10:11:23,877 - support.logger - INFO - inputting the keys coffee
+2023-12-05 10:11:25,462 - support.logger - INFO - Clicking on ('css selector', "[data-test='@web/Search/SearchButton']")
+2023-12-05 10:11:31,472 - support.logger - INFO - 
+Started step:  <then "Verify the search result page for coffee header">
+2023-12-05 10:11:31,473 - support.logger - INFO - Searching for the element locator ('css selector', "[data-test='resultsHeading']")
+2023-12-05 10:11:31,503 - support.logger - INFO - 
+Started step:  <then "Verify coffee in search result url">
+2023-12-05 10:13:16,433 - support.logger - INFO - 
+Started scenario: “Your cart is empty” message is shown for empty cart
+2023-12-05 10:13:19,080 - support.logger - INFO - 
+Started step:  <given "Open target home page">
+2023-12-05 10:13:20,965 - support.logger - INFO - Opening url https://www.target.com
+2023-12-05 10:13:20,965 - support.logger - INFO - 
+Started step:  <when "Click on Cart icon">
+2023-12-05 10:13:22,922 - support.logger - INFO - 
+Started step:  <then "Verify Your cart is empty message is shown">
+2023-12-05 10:13:22,922 - support.logger - INFO - Searching for the element locator ('css selector', "h1[class*='StyledHeading']")
+2023-12-05 10:13:23,990 - support.logger - INFO - 
+Started scenario: Verify user can click through Circle tabs
+2023-12-05 10:13:26,644 - support.logger - INFO - 
+Started step:  <given "Open Circle Page">
+2023-12-05 10:13:27,992 - support.logger - INFO - Opening url https://www.target.com/circle
+2023-12-05 10:13:27,992 - support.logger - INFO - 
+Started step:  <then "Verify that clicking through Circle tabs works">
+2023-12-05 10:13:27,992 - support.logger - INFO - Searching for the elements locator ('css selector', "a[class*='NavigationLink']")
+2023-12-05 10:13:28,757 - support.logger - INFO - Searching for the elements locator ('css selector', "a[class*='NavigationLink']")
+2023-12-05 10:13:29,009 - support.logger - INFO - Searching for the elements locator ('css selector', "a[class*='NavigationLink']")
+2023-12-05 10:13:29,650 - support.logger - INFO - Searching for the elements locator ('css selector', "a[class*='NavigationLink']")
+2023-12-05 10:13:30,410 - support.logger - INFO - 
+Started scenario: User can select Help topic
+2023-12-05 10:13:32,972 - support.logger - INFO - 
+Started step:  <given "Open Help page for Returns">
+2023-12-05 10:13:35,611 - support.logger - INFO - Opening url https://help.target.com/help/subcategoryarticle?childcat=Returns&parentcat=Returns+%26+Exchanges&searchQuery=
+2023-12-05 10:13:35,632 - support.logger - INFO - 
+Started step:  <then "Verify Returns page opened">
+2023-12-05 10:13:35,668 - support.logger - INFO - 
+Started step:  <when "Select Help topic Promotions & Coupons">
+2023-12-05 10:13:35,675 - support.logger - INFO - Searching for the element locator ('css selector', "select[id*='viewHelpTopics']")
+2023-12-05 10:13:35,687 - support.logger - INFO - selecting from Promotions & Coupons drop-down
+2023-12-05 10:13:37,705 - support.logger - INFO - 
+Started step:  <then "Verify Current promotions page opened">
+2023-12-05 10:13:37,864 - support.logger - INFO - 
+Started scenario: verify search product
+2023-12-05 10:13:40,393 - support.logger - INFO - 
+Started step:  <given "Open target home page">
+2023-12-05 10:13:41,933 - support.logger - INFO - Opening url https://www.target.com
+2023-12-05 10:13:41,933 - support.logger - INFO - 
+Started step:  <when "Search for coffee">
+2023-12-05 10:13:41,934 - support.logger - INFO - inputting the keys coffee
+2023-12-05 10:13:43,608 - support.logger - INFO - Clicking on ('css selector', "[data-test='@web/Search/SearchButton']")
+2023-12-05 10:13:49,611 - support.logger - INFO - 
+Started step:  <then "Verify the search result page for coffee header">
+2023-12-05 10:13:49,612 - support.logger - INFO - Searching for the element locator ('css selector', "[data-test='resultsHeading']")
+2023-12-05 10:13:49,641 - support.logger - INFO - 
+Started step:  <then "Verify coffee in search result url">
+2023-12-05 11:35:34,235 - support.logger - INFO - 
+Started scenario: User can see signin arrow
+2023-12-05 11:35:37,934 - support.logger - INFO - 
+Started step:  <given "Open target home page">
+2023-12-05 11:35:40,935 - support.logger - INFO - Opening url https://www.target.com
+2023-12-05 11:35:40,935 - support.logger - INFO - 
+Started step:  <when "Hover over signin">
+2023-12-05 11:35:40,935 - support.logger - INFO - Searching for the element locator ('css selector', "[data-test='@web/AccountLink']")
+2023-12-05 11:35:41,505 - support.logger - INFO - 
+Started step:  <then "Verify signin arrow shown">
