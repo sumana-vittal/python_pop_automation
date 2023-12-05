@@ -1,0 +1,8 @@
+for all test to run
+$ behave
+
+for tagged tests to run
+$ behave -t @smoke/tag-name
+
+for particular to run
+$ behave file_path
